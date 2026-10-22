@@ -1,0 +1,2500 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Aarav Sharma",
+      "email": "customer@autopulse.in",
+      "phone": "+91 98765 43210",
+      "passwordHash": "72e15a35263cc449970ad01f99167718e2099aad6314071310cf44865d1b5751",
+      "role": "CUSTOMER",
+      "specialization": "Vehicle Owner",
+      "active": true,
+      "createdAt": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "fullName": "Vikram Patel",
+      "email": "mechanic@autopulse.in",
+      "phone": "+91 98201 55432",
+      "passwordHash": "72e15a35263cc449970ad01f99167718e2099aad6314071310cf44865d1b5751",
+      "role": "MECHANIC",
+      "specialization": "Master Technician • Powertrain & EV Diagnostics",
+      "active": true,
+      "createdAt": "2026-10-01T09:05:00Z"
+    },
+    {
+      "id": 3,
+      "fullName": "Rohan Deshmukh",
+      "email": "mechanic2@autopulse.in",
+      "phone": "+91 98201 77889",
+      "passwordHash": "72e15a35263cc449970ad01f99167718e2099aad6314071310cf44865d1b5751",
+      "role": "MECHANIC",
+      "specialization": "Brakes, Suspension & AC Specialist",
+      "active": true,
+      "createdAt": "2026-10-01T09:10:00Z"
+    },
+    {
+      "id": 4,
+      "fullName": "Priya Nair",
+      "email": "admin@autopulse.in",
+      "phone": "+91 98111 22334",
+      "passwordHash": "72e15a35263cc449970ad01f99167718e2099aad6314071310cf44865d1b5751",
+      "role": "ADMIN",
+      "specialization": "Service Center Operations Director",
+      "active": true,
+      "createdAt": "2026-10-01T09:15:00Z"
+    },
+    {
+      "id": 5,
+      "fullName": "SAMPREETH REDDY KANCHARLA",
+      "email": "24eg110c41@anurag.edu.in",
+      "phone": "9867512345",
+      "passwordHash": "03a5a54d92142cfa926814b4aa5ec7cd054054d5bfebae3544090b895ab87f39",
+      "role": "CUSTOMER",
+      "specialization": "Hyderabad, Telangana",
+      "active": true,
+      "createdAt": "2026-10-22T02:26:23.516Z"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1792641902509,
+      "ownerId": 5,
+      "ownerName": "SAMPREETH REDDY KANCHARLA",
+      "ownerEmail": "24eg110c41@anurag.edu.in",
+      "registrationNumber": "AP 09 SX 1234",
+      "make": "Hyundai",
+      "model": "Creta SX",
+      "manufacturingYear": 2023,
+      "fuelType": "PETROL",
+      "vin": "MA3E8534539399",
+      "currentMileage": 20000,
+      "lastServiceMileage": 10000,
+      "lastServiceDate": "2026-06-15",
+      "insurancePolicyNo": "ICICI-9920182",
+      "insuranceExpiry": "2028-11-12",
+      "pucCertificateNo": "PUC-TS08-7741",
+      "pucExpiry": "2028-11-01",
+      "createdAt": "2026-10-22T04:05:02.509Z"
+    },
+    {
+      "id": 1792636734472,
+      "ownerId": 5,
+      "ownerName": "SAMPREETH REDDY KANCHARLA",
+      "ownerEmail": "24eg110c41@anurag.edu.in",
+      "registrationNumber": "TS 08 HZ 2220",
+      "make": "Maruti Suzuki",
+      "model": "Vitara Brezza",
+      "manufacturingYear": 2022,
+      "fuelType": "HYBRID",
+      "vin": "MA3E5815690390",
+      "currentMileage": 80000,
+      "lastServiceMileage": 10000,
+      "lastServiceDate": "2026-06-15",
+      "insurancePolicyNo": "ICICI-9920182",
+      "insuranceExpiry": "2027-10-22",
+      "pucCertificateNo": "PUC-TS08-7741",
+      "pucExpiry": "2027-08-22",
+      "createdAt": "2026-10-22T02:38:54.472Z",
+      "insuranceRenewalScheduled": true,
+      "pucRenewalScheduled": true,
+      "insuranceRenewalScheduledDate": "2026-10-22",
+      "pucRenewalScheduledDate": "2026-10-22"
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": 1792642162542,
+      "bookingCode": "SRV-1034",
+      "vehicleId": 1792641902509,
+      "vehicleReg": "AP 09 SX 1234",
+      "vehicleName": "Hyundai Creta SX",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "customerEmail": "24eg110c41@anurag.edu.in",
+      "mechanicId": 2,
+      "mechanicName": "Vikram Patel",
+      "serviceType": "Battery, Alternator & ECU Diagnostic Scan",
+      "customerSymptoms": "Routine scheduled maintenance and multi-point checkup.",
+      "aiDiagnosisSummary": "Degraded 12V AGM Battery Cells or Alternator Voltage Drop (AI Est. ₹2200 - ₹7200)",
+      "preferredDate": "2026-10-24",
+      "timeSlot": "10:00 AM - 12:00 PM",
+      "lifecycleStage": "DELIVERY",
+      "quotationApproved": true,
+      "inspectionNotes": "Awaiting vehicle reception and technician multi-point inspection.",
+      "serviceReport": "",
+      "estimatedCost": 10000,
+      "labourHours": 1.5,
+      "labourRate": 450,
+      "usedParts": [
+        {
+          "partId": 205,
+          "sku": "BAT-12V-60AH",
+          "partName": "Amaron Pro 12V 60Ah AGM Battery",
+          "quantity": 1,
+          "unitPrice": 6200,
+          "isCustom": false
+        },
+        {
+          "partId": 207,
+          "sku": "SPK-IRID-SET",
+          "partName": "NGK Laser Iridium Spark Plug Set (4 pcs)",
+          "quantity": 1,
+          "unitPrice": 2800,
+          "isCustom": false
+        }
+      ],
+      "repairTasks": [
+        {
+          "id": 1,
+          "title": "Inspect & resolve: Battery, Alternator & ECU Diagnostic Scan",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "title": "Multi-point fluid, filter & brake safety inspection",
+          "completed": true
+        }
+      ],
+      "qcChecklist": [
+        {
+          "id": 1,
+          "label": "Engine / Motor fluid levels & zero-leak verification",
+          "passed": true
+        },
+        {
+          "id": 2,
+          "label": "Braking performance & pedal pressure road test",
+          "passed": true
+        },
+        {
+          "id": 3,
+          "label": "Wheel lug nut torque & tire pressure check",
+          "passed": true
+        },
+        {
+          "id": 4,
+          "label": "Electrical systems, battery voltage & OBD-II fault code clear",
+          "passed": true
+        },
+        {
+          "id": 5,
+          "label": "Exterior wash, interior vacuum & final safety sign-off",
+          "passed": true
+        }
+      ],
+      "paymentRequested": true,
+      "deliveryReady": true,
+      "deliveryNote": "Your Hyundai Creta SX (AP 09 SX 1234) has completed all repairs and quality checks and is ready for delivery!",
+      "customerRating": null,
+      "customerFeedback": "",
+      "createdAt": "2026-10-22T04:09:22.543Z",
+      "updatedAt": "2026-10-22T04:29:27.932Z",
+      "partsSubtotal": 9000,
+      "labourSubtotal": 675,
+      "taxAmount": 1742,
+      "manualEstimateTotal": 10000
+    },
+    {
+      "id": 1792641929150,
+      "bookingCode": "SRV-1556",
+      "vehicleId": 1792641902509,
+      "vehicleReg": "AP 09 SX 1234",
+      "vehicleName": "Hyundai Creta SX",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "customerEmail": "24eg110c41@anurag.edu.in",
+      "mechanicId": 3,
+      "mechanicName": "Rohan Deshmukh",
+      "serviceType": "Comprehensive Periodic Service (10,000 km)",
+      "customerSymptoms": "Routine scheduled maintenance and multi-point checkup.",
+      "aiDiagnosisSummary": "Periodic Powertrain & Multi-Point Preventive Maintenance (AI Est. ₹3200 - ₹5800)",
+      "preferredDate": "2026-10-24",
+      "timeSlot": "10:00 AM - 12:00 PM",
+      "lifecycleStage": "DELIVERY",
+      "quotationApproved": true,
+      "inspectionNotes": "Awaiting vehicle reception and technician multi-point inspection.",
+      "serviceReport": "",
+      "estimatedCost": 13086,
+      "labourHours": 3,
+      "labourRate": 450,
+      "usedParts": [
+        {
+          "partId": 201,
+          "sku": "OIL-SYN-5W30",
+          "partName": "Castrol EDGE 5W-30 Full Synthetic Oil (4L)",
+          "quantity": 1,
+          "unitPrice": 2650,
+          "isCustom": false
+        },
+        {
+          "partId": 204,
+          "sku": "FLT-CAB-ACT",
+          "partName": "Activated Carbon Cabin AC Microfilter",
+          "quantity": 1,
+          "unitPrice": 890,
+          "isCustom": false
+        },
+        {
+          "partId": 205,
+          "sku": "BAT-12V-60AH",
+          "partName": "Amaron Pro 12V 60Ah AGM Battery",
+          "quantity": 1,
+          "unitPrice": 6200,
+          "isCustom": false
+        }
+      ],
+      "repairTasks": [
+        {
+          "id": 1,
+          "title": "Inspect & resolve: Comprehensive Periodic Service (10,000 km)",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "title": "Multi-point fluid, filter & brake safety inspection",
+          "completed": true
+        }
+      ],
+      "qcChecklist": [
+        {
+          "id": 1,
+          "label": "Engine / Motor fluid levels & zero-leak verification",
+          "passed": true
+        },
+        {
+          "id": 2,
+          "label": "Braking performance & pedal pressure road test",
+          "passed": true
+        },
+        {
+          "id": 3,
+          "label": "Wheel lug nut torque & tire pressure check",
+          "passed": true
+        },
+        {
+          "id": 4,
+          "label": "Electrical systems, battery voltage & OBD-II fault code clear",
+          "passed": true
+        },
+        {
+          "id": 5,
+          "label": "Exterior wash, interior vacuum & final safety sign-off",
+          "passed": true
+        }
+      ],
+      "paymentRequested": true,
+      "deliveryReady": true,
+      "deliveryNote": "Your Hyundai Creta SX (AP 09 SX 1234) has completed all repairs and quality checks and is ready for delivery!",
+      "customerRating": null,
+      "customerFeedback": "",
+      "createdAt": "2026-10-22T04:05:29.150Z",
+      "updatedAt": "2026-10-22T04:53:58.257Z",
+      "partsSubtotal": 9740,
+      "labourSubtotal": 1350,
+      "taxAmount": 1996,
+      "manualEstimateTotal": null
+    },
+    {
+      "id": 1792636860942,
+      "bookingCode": "SRV-7813",
+      "vehicleId": 1792636734472,
+      "vehicleReg": "TS 08 HZ 2220",
+      "vehicleName": "Maruti Suzuki Vitara Brezza",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "customerEmail": "24eg110c41@anurag.edu.in",
+      "mechanicId": 2,
+      "mechanicName": "Vikram Patel",
+      "serviceType": "Comprehensive Periodic Service (10,000 km)",
+      "customerSymptoms": "Routine scheduled maintenance and multi-point checkup.",
+      "aiDiagnosisSummary": "Periodic Powertrain & Multi-Point Preventive Maintenance (AI Est. ₹3200 - ₹5800)",
+      "preferredDate": "2026-10-24",
+      "timeSlot": "10:00 AM - 12:00 PM",
+      "lifecycleStage": "DELIVERY",
+      "quotationApproved": true,
+      "inspectionNotes": "Awaiting vehicle reception and technician multi-point inspection.",
+      "serviceReport": "DONE",
+      "estimatedCost": 6396,
+      "labourHours": 4,
+      "labourRate": 250,
+      "usedParts": [
+        {
+          "partId": 201,
+          "sku": "OIL-SYN-5W30",
+          "partName": "Castrol EDGE 5W-30 Full Synthetic Oil (4L)",
+          "quantity": 1,
+          "unitPrice": 2650,
+          "isCustom": false
+        },
+        {
+          "partId": 202,
+          "sku": "FLT-OIL-OEM",
+          "partName": "OEM Spin-On Engine Oil Filter",
+          "quantity": 1,
+          "unitPrice": 480,
+          "isCustom": false
+        },
+        {
+          "partId": 204,
+          "sku": "FLT-CAB-ACT",
+          "partName": "Activated Carbon Cabin AC Microfilter",
+          "quantity": 1,
+          "unitPrice": 890,
+          "isCustom": false
+        },
+        {
+          "partId": 1792637525735,
+          "sku": "CUSTOM-324",
+          "partName": "cleaning",
+          "quantity": 1,
+          "unitPrice": 400,
+          "isCustom": true
+        }
+      ],
+      "customerRating": 5,
+      "customerFeedback": "Great service experience!",
+      "createdAt": "2026-10-22T02:41:00.942Z",
+      "updatedAt": "2026-10-22T04:29:31.823Z",
+      "manualEstimateTotal": null,
+      "partsSubtotal": 4420,
+      "labourSubtotal": 1000,
+      "taxAmount": 976,
+      "repairTasks": [
+        {
+          "id": 1,
+          "title": "Inspect & resolve: Comprehensive Periodic Service (10,000 km)",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "title": "Multi-point fluid, filter & brake safety inspection",
+          "completed": true
+        }
+      ],
+      "qcChecklist": [
+        {
+          "id": 1,
+          "label": "Engine / Motor fluid levels & zero-leak verification",
+          "passed": true
+        },
+        {
+          "id": 2,
+          "label": "Braking performance & pedal pressure road test",
+          "passed": true
+        },
+        {
+          "id": 3,
+          "label": "Wheel lug nut torque & tire pressure check",
+          "passed": true
+        },
+        {
+          "id": 4,
+          "label": "Electrical systems, battery voltage & OBD-II fault code clear",
+          "passed": true
+        },
+        {
+          "id": 5,
+          "label": "Exterior wash, interior vacuum & final safety sign-off",
+          "passed": true
+        }
+      ],
+      "paymentRequested": true,
+      "deliveryReady": true,
+      "deliveryNote": "Your Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) has completed all repairs and quality checks and is ready for delivery!"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1792642162547,
+      "invoiceNumber": "INV-2026-2865",
+      "serviceRequestId": 1792642162542,
+      "bookingCode": "SRV-1034",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "vehicleReg": "AP 09 SX 1234",
+      "vehicleName": "Hyundai Creta SX",
+      "partsSubtotal": 9000,
+      "labourSubtotal": 675,
+      "taxAmount": 1742,
+      "discountAmount": 0,
+      "grandTotal": 10000,
+      "paymentStatus": "PAID",
+      "paymentMethod": "UPI / Razorpay",
+      "issuedAt": "2026-10-22T04:09:22.543Z",
+      "paidAt": "2026-10-22T04:11:04.743Z"
+    },
+    {
+      "id": 1792641929483,
+      "invoiceNumber": "INV-2026-2986",
+      "serviceRequestId": 1792641929150,
+      "bookingCode": "SRV-1556",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "vehicleReg": "AP 09 SX 1234",
+      "vehicleName": "Hyundai Creta SX",
+      "partsSubtotal": 9740,
+      "labourSubtotal": 1350,
+      "taxAmount": 1996,
+      "discountAmount": 0,
+      "grandTotal": 13086,
+      "paymentStatus": "PAID",
+      "paymentMethod": "UPI / Instant Pay",
+      "issuedAt": "2026-10-22T04:05:29.151Z",
+      "paidAt": "2026-10-22T04:08:07.151Z"
+    },
+    {
+      "id": 1792636861777,
+      "invoiceNumber": "INV-2026-5197",
+      "serviceRequestId": 1792636860942,
+      "bookingCode": "SRV-7813",
+      "customerId": 5,
+      "customerName": "SAMPREETH REDDY KANCHARLA",
+      "vehicleReg": "TS 08 HZ 2220",
+      "vehicleName": "Maruti Suzuki Vitara Brezza",
+      "partsSubtotal": 4420,
+      "labourSubtotal": 1000,
+      "taxAmount": 976,
+      "discountAmount": 0,
+      "grandTotal": 6396,
+      "paymentStatus": "PAID",
+      "paymentMethod": "UPI / Razorpay",
+      "issuedAt": "2026-10-22T02:41:00.942Z",
+      "paidAt": "2026-10-22T02:53:29.530Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1792644838258,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:53:58.258Z"
+    },
+    {
+      "id": 1792643371823,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:29:31.823Z"
+    },
+    {
+      "id": 1792643369823,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:29:29.823Z"
+    },
+    {
+      "id": 1792643367932,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:29:27.932Z"
+    },
+    {
+      "id": 1792643033181,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:23:53.181Z"
+    },
+    {
+      "id": 1792642934538,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:22:14.538Z"
+    },
+    {
+      "id": 1792642916056,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:21:56.056Z"
+    },
+    {
+      "id": 1792642873952,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:21:13.952Z"
+    },
+    {
+      "id": 1792642871214,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:21:11.214Z"
+    },
+    {
+      "id": 1792642745544,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Compliance Updated (TS 08 HZ 2220)",
+      "message": "Insurance (2027-10-22) & PUC (2027-08-22) compliance records updated for Maruti Suzuki Vitara Brezza.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:19:05.544Z"
+    },
+    {
+      "id": 1792642726780,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Compliance Updated (TS 08 HZ 2220)",
+      "message": "Insurance (2027-10-22) & PUC (2026-11-01) compliance records updated for Maruti Suzuki Vitara Brezza.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:18:46.780Z"
+    },
+    {
+      "id": 1792642269797,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:11:09.797Z"
+    },
+    {
+      "id": 1792642264743,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Payment Received (INV-2026-2865)",
+      "message": "Digital Invoice INV-2026-2865 of ₹10,000 paid via UPI / Razorpay. Vehicle ready for delivery!",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:11:04.743Z"
+    },
+    {
+      "id": 1792642257352,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): PAYMENT",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:57.352Z"
+    },
+    {
+      "id": 1792642255868,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:55.868Z"
+    },
+    {
+      "id": 1792642255165,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:55.165Z"
+    },
+    {
+      "id": 1792642254863,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:54.863Z"
+    },
+    {
+      "id": 1792642254508,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:54.508Z"
+    },
+    {
+      "id": 1792642254147,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:54.147Z"
+    },
+    {
+      "id": 1792642252321,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:52.321Z"
+    },
+    {
+      "id": 1792642251365,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:51.365Z"
+    },
+    {
+      "id": 1792642249485,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:49.485Z"
+    },
+    {
+      "id": 1792642247305,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:47.305Z"
+    },
+    {
+      "id": 1792642242086,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): APPROVAL",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:42.086Z"
+    },
+    {
+      "id": 1792642237194,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): APPROVAL",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:37.194Z"
+    },
+    {
+      "id": 1792642235595,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:35.595Z"
+    },
+    {
+      "id": 1792642202127,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "Low Stock Alert: Amaron Pro 12V 60Ah AGM Battery",
+      "message": "Inventory for BAT-12V-60AH dropped to 1 units (Reorder threshold: 5).",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:10:02.127Z"
+    },
+    {
+      "id": 1792642185763,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:09:45.763Z"
+    },
+    {
+      "id": 1792642179772,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): INSPECTION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:09:39.772Z"
+    },
+    {
+      "id": 1792642176643,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1034): VEHICLE RECEIVED",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:09:36.643Z"
+    },
+    {
+      "id": 1792642162545,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Booking Confirmed (SRV-1034)",
+      "message": "SAMPREETH REDDY KANCHARLA booked Battery, Alternator & ECU Diagnostic Scan for Hyundai Creta SX (AP 09 SX 1234) on 2026-10-24 (10:00 AM - 12:00 PM). Assigned Mechanic: Vikram Patel.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:09:22.543Z"
+    },
+    {
+      "id": 1792642105259,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:08:25.259Z"
+    },
+    {
+      "id": 1792642097748,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:08:17.748Z"
+    },
+    {
+      "id": 1792642094363,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): DELIVERY",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:08:14.363Z"
+    },
+    {
+      "id": 1792642087152,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Payment Received (INV-2026-2986)",
+      "message": "Digital Invoice INV-2026-2986 of ₹13,086 paid via UPI / Instant Pay. Vehicle ready for delivery!",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:08:07.178Z"
+    },
+    {
+      "id": 1792642071621,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): PAYMENT",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:51.621Z"
+    },
+    {
+      "id": 1792642068596,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:48.596Z"
+    },
+    {
+      "id": 1792642066927,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:46.927Z"
+    },
+    {
+      "id": 1792642065070,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:45.070Z"
+    },
+    {
+      "id": 1792642061639,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:41.639Z"
+    },
+    {
+      "id": 1792642056655,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:36.655Z"
+    },
+    {
+      "id": 1792642032448,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUALITY CHECK",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:12.448Z"
+    },
+    {
+      "id": 1792642028953,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:08.953Z"
+    },
+    {
+      "id": 1792642027063,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:07.063Z"
+    },
+    {
+      "id": 1792642023847,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): SERVICE REPAIR",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:07:03.847Z"
+    },
+    {
+      "id": 1792642019861,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): APPROVAL",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:59.861Z"
+    },
+    {
+      "id": 1792642010735,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): APPROVAL",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:50.735Z"
+    },
+    {
+      "id": 1792642006912,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:46.912Z"
+    },
+    {
+      "id": 1792642006298,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:46.298Z"
+    },
+    {
+      "id": 1792642005573,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:45.573Z"
+    },
+    {
+      "id": 1792641991469,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "Low Stock Alert: Amaron Pro 12V 60Ah AGM Battery",
+      "message": "Inventory for BAT-12V-60AH dropped to 2 units (Reorder threshold: 5).",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:31.469Z"
+    },
+    {
+      "id": 1792641961649,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): QUOTATION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:06:01.649Z"
+    },
+    {
+      "id": 1792641948215,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): INSPECTION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:48.215Z"
+    },
+    {
+      "id": 1792641946115,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): VEHICLE RECEIVED",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:46.115Z"
+    },
+    {
+      "id": 1792641944834,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): INSPECTION",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:44.834Z"
+    },
+    {
+      "id": 1792641941274,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-1556): VEHICLE RECEIVED",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:41.274Z"
+    },
+    {
+      "id": 1792641929153,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Booking Confirmed (SRV-1556)",
+      "message": "SAMPREETH REDDY KANCHARLA booked Comprehensive Periodic Service (10,000 km) for Hyundai Creta SX (AP 09 SX 1234) on 2026-10-24 (10:00 AM - 12:00 PM). Assigned Mechanic: Vikram Patel.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:29.151Z"
+    },
+    {
+      "id": 1792641902510,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Vehicle Registered: AP 09 SX 1234",
+      "message": "Hyundai Creta SX (AP 09 SX 1234) registered by SAMPREETH REDDY KANCHARLA. Compliance tracking active.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:05:02.509Z"
+    },
+    {
+      "id": 1792641832439,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Compliance Updated (TS 08 HZ 2220)",
+      "message": "Insurance (2026-11-12) & PUC (2026-11-01) compliance records updated for Maruti Suzuki Vitara Brezza.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:03:52.439Z"
+    },
+    {
+      "id": 1792641752110,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:02:32.110Z"
+    },
+    {
+      "id": 1792641748113,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:02:28.113Z"
+    },
+    {
+      "id": 1792641747144,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:02:27.144Z"
+    },
+    {
+      "id": 1792641744781,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:02:24.781Z"
+    },
+    {
+      "id": 1792641729897,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:02:09.897Z"
+    },
+    {
+      "id": 1792641703066,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:43.066Z"
+    },
+    {
+      "id": 1792641694496,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:34.496Z"
+    },
+    {
+      "id": 1792641692725,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:32.725Z"
+    },
+    {
+      "id": 1792641691347,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:31.347Z"
+    },
+    {
+      "id": 1792641689347,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:29.347Z"
+    },
+    {
+      "id": 1792641687557,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:27.557Z"
+    },
+    {
+      "id": 1792641679930,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:19.930Z"
+    },
+    {
+      "id": 1792641678333,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:18.333Z"
+    },
+    {
+      "id": 1792641672608,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:12.608Z"
+    },
+    {
+      "id": 1792641668904,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:08.904Z"
+    },
+    {
+      "id": 1792641664773,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:01:04.773Z"
+    },
+    {
+      "id": 1792641659416,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:00:59.416Z"
+    },
+    {
+      "id": 1792641654662,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:00:54.662Z"
+    },
+    {
+      "id": 1792641648741,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:00:48.741Z"
+    },
+    {
+      "id": 1792641636991,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T04:00:36.991Z"
+    },
+    {
+      "id": 1792641583853,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Compliance Updated (TS 08 HZ 2220)",
+      "message": "Insurance (2026-11-12) & PUC (2026-11-01) compliance records updated for Maruti Suzuki Vitara Brezza.",
+      "isRead": false,
+      "sentAt": "2026-10-22T03:59:43.853Z"
+    },
+    {
+      "id": 1792641576406,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Compliance Updated (TS 08 HZ 2220)",
+      "message": "Insurance (2026-11-12) & PUC (2026-11-01) compliance records updated for Maruti Suzuki Vitara Brezza.",
+      "isRead": false,
+      "sentAt": "2026-10-22T03:59:36.406Z"
+    },
+    {
+      "id": 1792638171388,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): BOOKING",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: BOOKING.",
+      "isRead": false,
+      "sentAt": "2026-10-22T03:02:51.388Z"
+    },
+    {
+      "id": 1792637860682,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:40.682Z"
+    },
+    {
+      "id": 1792637860019,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): BOOKING",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: BOOKING.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:40.019Z"
+    },
+    {
+      "id": 1792637855899,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:35.899Z"
+    },
+    {
+      "id": 1792637853143,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:33.143Z"
+    },
+    {
+      "id": 1792637852696,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:32.696Z"
+    },
+    {
+      "id": 1792637849477,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:29.477Z"
+    },
+    {
+      "id": 1792637848731,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:28.731Z"
+    },
+    {
+      "id": 1792637848001,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:57:28.001Z"
+    },
+    {
+      "id": 1792637677053,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "[Scheduler] Low Stock: Amaron Pro 12V 60Ah AGM Battery (3 left)",
+      "message": "SKU BAT-12V-60AH is below reorder level (5). Supplier: Amara Raja Batteries.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:36.869Z"
+    },
+    {
+      "id": 1792637677751,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "[Scheduler] Low Stock: Brembo Front Ceramic Brake Pad Set (4 left)",
+      "message": "SKU BRK-PAD-FRT is below reorder level (6). Supplier: Brembo Auto Components.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:36.869Z"
+    },
+    {
+      "id": 1792637677207,
+      "recipientUserId": 5,
+      "channel": "SMS",
+      "alertType": "PUC_EXPIRY",
+      "title": "[Scheduler] PUC Expiring in 11 Days (TS 08 HZ 2220)",
+      "message": "Automated scan detected PUC PUC-TS08-7741 for TS 08 HZ 2220 expires on 2026-11-01.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:36.869Z"
+    },
+    {
+      "id": 1792637676967,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "INSURANCE_EXPIRY",
+      "title": "[Scheduler] Insurance Expiring in 22 Days (TS 08 HZ 2220)",
+      "message": "Automated scan detected policy ICICI-9920182 for Maruti Suzuki Vitara Brezza expires on 2026-11-12.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:36.869Z"
+    },
+    {
+      "id": 1792637656795,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:16.795Z"
+    },
+    {
+      "id": 1792637647019,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:07.019Z"
+    },
+    {
+      "id": 1792637643975,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): DELIVERY",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: DELIVERY.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:03.975Z"
+    },
+    {
+      "id": 1792637642918,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:54:02.918Z"
+    },
+    {
+      "id": 1792637638846,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): PAYMENT",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: PAYMENT.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:58.846Z"
+    },
+    {
+      "id": 1792637635440,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUALITY CHECK",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUALITY CHECK.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:55.440Z"
+    },
+    {
+      "id": 1792637635009,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:55.009Z"
+    },
+    {
+      "id": 1792637634411,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:54.411Z"
+    },
+    {
+      "id": 1792637633780,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:53.780Z"
+    },
+    {
+      "id": 1792637630637,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:50.637Z"
+    },
+    {
+      "id": 1792637621741,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:41.741Z"
+    },
+    {
+      "id": 1792637609530,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Payment Received (INV-2026-5197)",
+      "message": "Digital Invoice INV-2026-5197 of ₹6,396 paid via UPI / Razorpay. Vehicle ready for delivery!",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:29.556Z"
+    },
+    {
+      "id": 1792637587763,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:07.763Z"
+    },
+    {
+      "id": 1792637585958,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:05.958Z"
+    },
+    {
+      "id": 1792637585228,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:05.228Z"
+    },
+    {
+      "id": 1792637583379,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:03.379Z"
+    },
+    {
+      "id": 1792637580647,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:53:00.647Z"
+    },
+    {
+      "id": 1792637561054,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:52:41.054Z"
+    },
+    {
+      "id": 1792637535617,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:52:15.617Z"
+    },
+    {
+      "id": 1792637533991,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:52:13.991Z"
+    },
+    {
+      "id": 1792637530241,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:52:10.241Z"
+    },
+    {
+      "id": 1792637500057,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:40.057Z"
+    },
+    {
+      "id": 1792637499323,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:39.323Z"
+    },
+    {
+      "id": 1792637498263,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:38.263Z"
+    },
+    {
+      "id": 1792637486489,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:26.489Z"
+    },
+    {
+      "id": 1792637469934,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:09.934Z"
+    },
+    {
+      "id": 1792637469633,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:09.633Z"
+    },
+    {
+      "id": 1792637469351,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:09.351Z"
+    },
+    {
+      "id": 1792637467363,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:07.363Z"
+    },
+    {
+      "id": 1792637466367,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:06.367Z"
+    },
+    {
+      "id": 1792637466024,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:06.024Z"
+    },
+    {
+      "id": 1792637463770,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:03.770Z"
+    },
+    {
+      "id": 1792637461896,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:01.896Z"
+    },
+    {
+      "id": 1792637460371,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:51:00.371Z"
+    },
+    {
+      "id": 1792637457631,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:57.631Z"
+    },
+    {
+      "id": 1792637456532,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:56.532Z"
+    },
+    {
+      "id": 1792637456273,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:56.273Z"
+    },
+    {
+      "id": 1792637455981,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:55.981Z"
+    },
+    {
+      "id": 1792637455569,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:55.569Z"
+    },
+    {
+      "id": 1792637455024,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:55.024Z"
+    },
+    {
+      "id": 1792637454909,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:54.909Z"
+    },
+    {
+      "id": 1792637453813,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:53.813Z"
+    },
+    {
+      "id": 1792637452415,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:52.415Z"
+    },
+    {
+      "id": 1792637451976,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:51.976Z"
+    },
+    {
+      "id": 1792637451575,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:51.575Z"
+    },
+    {
+      "id": 1792637450830,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:50.830Z"
+    },
+    {
+      "id": 1792637449591,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:49.591Z"
+    },
+    {
+      "id": 1792637444191,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:44.191Z"
+    },
+    {
+      "id": 1792637442411,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:42.411Z"
+    },
+    {
+      "id": 1792637441419,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:41.419Z"
+    },
+    {
+      "id": 1792637441182,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:41.182Z"
+    },
+    {
+      "id": 1792637440711,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:40.711Z"
+    },
+    {
+      "id": 1792637440537,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:40.537Z"
+    },
+    {
+      "id": 1792637438830,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:38.830Z"
+    },
+    {
+      "id": 1792637435789,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:35.789Z"
+    },
+    {
+      "id": 1792637430913,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:30.913Z"
+    },
+    {
+      "id": 1792637429410,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:29.410Z"
+    },
+    {
+      "id": 1792637429216,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:29.216Z"
+    },
+    {
+      "id": 1792637428345,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:28.345Z"
+    },
+    {
+      "id": 1792637426123,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:26.123Z"
+    },
+    {
+      "id": 1792637425640,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:25.640Z"
+    },
+    {
+      "id": 1792637425440,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:25.440Z"
+    },
+    {
+      "id": 1792637425248,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:25.248Z"
+    },
+    {
+      "id": 1792637417382,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:17.382Z"
+    },
+    {
+      "id": 1792637417199,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:17.199Z"
+    },
+    {
+      "id": 1792637417035,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:17.035Z"
+    },
+    {
+      "id": 1792637416055,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:16.055Z"
+    },
+    {
+      "id": 1792637413037,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:13.037Z"
+    },
+    {
+      "id": 1792637412819,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:12.819Z"
+    },
+    {
+      "id": 1792637412308,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:12.308Z"
+    },
+    {
+      "id": 1792637412057,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:12.057Z"
+    },
+    {
+      "id": 1792637411788,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.788Z"
+    },
+    {
+      "id": 1792637411650,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.650Z"
+    },
+    {
+      "id": 1792637411626,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.626Z"
+    },
+    {
+      "id": 1792637411611,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.611Z"
+    },
+    {
+      "id": 1792637411516,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.516Z"
+    },
+    {
+      "id": 1792637411251,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.251Z"
+    },
+    {
+      "id": 1792637411000,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:11.000Z"
+    },
+    {
+      "id": 1792637409562,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:50:09.562Z"
+    },
+    {
+      "id": 1792636957480,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:37.480Z"
+    },
+    {
+      "id": 1792636943011,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:23.011Z"
+    },
+    {
+      "id": 1792636942826,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:22.826Z"
+    },
+    {
+      "id": 1792636941600,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:21.600Z"
+    },
+    {
+      "id": 1792636940840,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): SERVICE REPAIR",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: SERVICE REPAIR.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:20.840Z"
+    },
+    {
+      "id": 1792636940208,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:20.208Z"
+    },
+    {
+      "id": 1792636937318,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): APPROVAL",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: APPROVAL.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:17.318Z"
+    },
+    {
+      "id": 1792636932924,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): QUOTATION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: QUOTATION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:12.924Z"
+    },
+    {
+      "id": 1792636931842,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:11.842Z"
+    },
+    {
+      "id": 1792636928544,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:08.544Z"
+    },
+    {
+      "id": 1792636927056,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:07.056Z"
+    },
+    {
+      "id": 1792636923176,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:03.176Z"
+    },
+    {
+      "id": 1792636920400,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:42:00.400Z"
+    },
+    {
+      "id": 1792636913798,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): INSPECTION",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: INSPECTION.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:41:53.798Z"
+    },
+    {
+      "id": 1792636913135,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:41:53.135Z"
+    },
+    {
+      "id": 1792636910294,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): VEHICLE RECEIVED",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: VEHICLE RECEIVED.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:41:50.294Z"
+    },
+    {
+      "id": 1792636908989,
+      "recipientUserId": 5,
+      "channel": "PUSH",
+      "alertType": "SERVICE_STATUS",
+      "title": "Service Update (SRV-7813): BOOKING",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) is now at stage: BOOKING.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:41:48.989Z"
+    },
+    {
+      "id": 1792636860944,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "SERVICE_STATUS",
+      "title": "Booking Confirmed (SRV-7813)",
+      "message": "SAMPREETH REDDY KANCHARLA booked Comprehensive Periodic Service (10,000 km) for Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) on 2026-10-24 (10:00 AM - 12:00 PM). Assigned Mechanic: Vikram Patel.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:41:00.942Z"
+    },
+    {
+      "id": 1792636831063,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "[Scheduler] Low Stock: Amaron Pro 12V 60Ah AGM Battery (3 left)",
+      "message": "SKU BAT-12V-60AH is below reorder level (5). Supplier: Amara Raja Batteries.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:40:30.672Z"
+    },
+    {
+      "id": 1792636831602,
+      "recipientUserId": 4,
+      "channel": "SYSTEM",
+      "alertType": "LOW_STOCK",
+      "title": "[Scheduler] Low Stock: Brembo Front Ceramic Brake Pad Set (4 left)",
+      "message": "SKU BRK-PAD-FRT is below reorder level (6). Supplier: Brembo Auto Components.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:40:30.672Z"
+    },
+    {
+      "id": 1792636831287,
+      "recipientUserId": 5,
+      "channel": "SMS",
+      "alertType": "PUC_EXPIRY",
+      "title": "[Scheduler] PUC Expiring in 11 Days (TS 08 HZ 2220)",
+      "message": "Automated scan detected PUC PUC-TS08-7741 for TS 08 HZ 2220 expires on 2026-11-01.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:40:30.672Z"
+    },
+    {
+      "id": 1792636830888,
+      "recipientUserId": 5,
+      "channel": "EMAIL",
+      "alertType": "INSURANCE_EXPIRY",
+      "title": "[Scheduler] Insurance Expiring in 22 Days (TS 08 HZ 2220)",
+      "message": "Automated scan detected policy ICICI-9920182 for Maruti Suzuki Vitara Brezza expires on 2026-11-12.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:40:30.672Z"
+    },
+    {
+      "id": 1792636734473,
+      "recipientUserId": 5,
+      "channel": "SYSTEM",
+      "alertType": "SERVICE_STATUS",
+      "title": "Vehicle Registered: TS 08 HZ 2220",
+      "message": "Maruti Suzuki Vitara Brezza (TS 08 HZ 2220) registered by SAMPREETH REDDY KANCHARLA. Compliance tracking active.",
+      "isRead": false,
+      "sentAt": "2026-10-22T02:38:54.472Z"
+    }
+  ],
+  "inventoryParts": [
+    {
+      "id": 201,
+      "sku": "OIL-SYN-5W30",
+      "partName": "Castrol EDGE 5W-30 Full Synthetic Oil (4L)",
+      "category": "Lubricants & Fluids",
+      "stockQuantity": 16,
+      "reorderLevel": 8,
+      "unitPrice": 2650,
+      "supplier": "Castrol India Ltd"
+    },
+    {
+      "id": 202,
+      "sku": "FLT-OIL-OEM",
+      "partName": "OEM Spin-On Engine Oil Filter",
+      "category": "Filters",
+      "stockQuantity": 23,
+      "reorderLevel": 10,
+      "unitPrice": 480,
+      "supplier": "Mobis Genuine Parts"
+    },
+    {
+      "id": 203,
+      "sku": "BRK-PAD-FRT",
+      "partName": "Brembo Front Ceramic Brake Pad Set",
+      "category": "Braking System",
+      "stockQuantity": 14,
+      "reorderLevel": 6,
+      "unitPrice": 3450,
+      "supplier": "Brembo Auto Components"
+    },
+    {
+      "id": 204,
+      "sku": "FLT-CAB-ACT",
+      "partName": "Activated Carbon Cabin AC Microfilter",
+      "category": "HVAC & Cooling",
+      "stockQuantity": 12,
+      "reorderLevel": 6,
+      "unitPrice": 890,
+      "supplier": "Bosch Automotive"
+    },
+    {
+      "id": 205,
+      "sku": "BAT-12V-60AH",
+      "partName": "Amaron Pro 12V 60Ah AGM Battery",
+      "category": "Electrical & Battery",
+      "stockQuantity": 11,
+      "reorderLevel": 5,
+      "unitPrice": 6200,
+      "supplier": "Amara Raja Batteries"
+    },
+    {
+      "id": 206,
+      "sku": "BRK-FLD-DOT4",
+      "partName": "Bosch DOT-4 Synthetic Brake Fluid (500ml)",
+      "category": "Lubricants & Fluids",
+      "stockQuantity": 15,
+      "reorderLevel": 5,
+      "unitPrice": 420,
+      "supplier": "Bosch Automotive"
+    },
+    {
+      "id": 207,
+      "sku": "SPK-IRID-SET",
+      "partName": "NGK Laser Iridium Spark Plug Set (4 pcs)",
+      "category": "Ignition & Engine",
+      "stockQuantity": 8,
+      "reorderLevel": 4,
+      "unitPrice": 2800,
+      "supplier": "NGK Spark Plugs India"
+    }
+  ]
+}

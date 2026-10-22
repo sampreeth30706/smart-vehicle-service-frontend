@@ -822,7 +822,7 @@ window.fetch = async (input, init) => {
   if (isApiCall) {
     try {
       const res = await originalFetch(input, init);
-      if (res.status === 404 && !window.location.port) {
+      if (res.status >= 500 || (res.status === 404 && !window.location.port)) {
         return handleCloudApiRequest(urlStr, init);
       }
       return res;

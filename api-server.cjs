@@ -72,7 +72,7 @@ const INITIAL_DB = {
     },
     {
       id: 4,
-      fullName: 'Priya Nair',
+      fullName: 'Admin Console',
       email: 'admin@autopulse.in',
       phone: '+91 98111 22334',
       passwordHash: DEFAULT_PASSWORD_HASH,
@@ -180,6 +180,7 @@ function syncUsersToSqlite(users) {
       u.createdAt || new Date().toISOString()
     );
   }
+  sqliteDb.prepare(`UPDATE users SET fullName = 'Admin Console' WHERE role = 'ADMIN'`).run();
 }
 
 function getAllSqliteUsers() {

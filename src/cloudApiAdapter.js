@@ -357,7 +357,15 @@ const DIAGNOSTIC_KNOWLEDGE_BASE = [
 function getCloudDb() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed.users)) {
+        parsed.users.forEach((u) => {
+          if (u.role === 'ADMIN') u.fullName = 'Admin Console';
+        });
+      }
+      return parsed;
+    }
   } catch (e) {
     console.warn(e);
   }

@@ -418,7 +418,11 @@ export default function App() {
       setActiveTab('dashboard');
       setIsAuthenticated(true);
       await fetchAllData();
-      showToastMsg(`Welcome ${data.user.fullName}! Logged into ${ROLE_CONFIG[data.user.role]?.badge}.`);
+      showToastMsg(
+        data.user.role === 'ADMIN'
+          ? 'Welcome Admin Console!'
+          : `Welcome ${data.user.fullName}! Logged into ${ROLE_CONFIG[data.user.role]?.badge}.`
+      );
     } catch (err) {
       setAuthError('Unable to reach backend server on port 8080.');
     } finally {
@@ -883,13 +887,13 @@ export default function App() {
                 })}
             </div>
 
-            {/* Quick Role Logins for Testing Mechanic & Admin */}
+            {/* Quick Role Logins for Testing Customer & Mechanic */}
             <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2.5">
               <div className="text-xs font-semibold text-slate-300 flex items-center justify-between">
                 <span>Quick Role Fillers (Password: <code className="text-emerald-400">password123</code>)</span>
                 <span className="text-[11px] text-slate-500">Or register Customer / Mechanic!</span>
               </div>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 <button
                   type="button"
                   onClick={() => fillDemoAccount('CUSTOMER')}
@@ -903,13 +907,6 @@ export default function App() {
                   className="px-2.5 py-2 rounded-xl bg-slate-950 hover:bg-amber-950/60 border border-slate-800 hover:border-amber-500/40 text-xs font-semibold text-amber-400 transition"
                 >
                   Fill Mechanic
-                </button>
-                <button
-                  type="button"
-                  onClick={() => fillDemoAccount('ADMIN')}
-                  className="px-2.5 py-2 rounded-xl bg-slate-950 hover:bg-emerald-950/60 border border-slate-800 hover:border-emerald-500/40 text-xs font-semibold text-emerald-400 transition"
-                >
-                  Fill Admin
                 </button>
               </div>
             </div>
@@ -1216,7 +1213,15 @@ export default function App() {
                 </span>
               </div>
               <p className="text-xs text-slate-400">
-                Signed in as <strong className="text-slate-200">{currentUser?.fullName}</strong> ({currentUser?.email})
+                {activeRole === 'ADMIN' ? (
+                  <>
+                    <strong className="text-slate-200">Welcome Admin Console</strong> ({currentUser?.email})
+                  </>
+                ) : (
+                  <>
+                    Signed in as <strong className="text-slate-200">{currentUser?.fullName}</strong> ({currentUser?.email})
+                  </>
+                )}
               </p>
             </div>
           </div>
@@ -1305,7 +1310,9 @@ export default function App() {
               Real-Time Sync Active (Every 2s):
             </span>
             <span className="text-slate-200 font-semibold">
-              {currentUser?.fullName} • {activeRole} (User ID #{currentUser?.id})
+              {activeRole === 'ADMIN'
+                ? `Welcome Admin Console • ADMIN`
+                : `${currentUser?.fullName} • ${activeRole} (User ID #${currentUser?.id})`}
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -4016,7 +4023,7 @@ export default function App() {
                       Administrator Control Center • Full Workshop &amp; Database Authority
                     </span>
                     <h2 className="text-2xl font-bold text-white mt-0.5">
-                      Operations Console — {currentUser?.fullName}
+                      Welcome Admin Console
                     </h2>
                     <p className="text-xs text-slate-300 mt-1">
                       Register customer vehicles, schedule &amp; dispatch service repairs, manage mechanic workload distribution, and control OEM spare parts restocking.
